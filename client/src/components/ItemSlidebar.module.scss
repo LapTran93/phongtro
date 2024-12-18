@@ -1,0 +1,35 @@
+.container{
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    h3{
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .list-price{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 40px;
+        .text-price{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+            padding: 5px 0;
+            cursor: pointer;
+            &:hover{
+                color: rgb(236, 169, 10);
+            }
+        }
+        
+    }
+    .icon{
+        font-size: 10px;
+        color: gray;
+    }
+}

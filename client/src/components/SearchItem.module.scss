@@ -1,0 +1,169 @@
+.search-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white-color);
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  flex: 1;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+
+  .icon {
+    margin-right: 10px;
+    color: #777;
+  }
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+  .search-text span {
+    padding-left: 10px;
+    white-space: nowrap;
+  }
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  width: 400px;
+  max-width: 90%;
+  max-height: 90%; /* Đảm bảo popup không vượt quá chiều cao viewport */
+  overflow: hidden; /* Ẩn cuộn cho toàn bộ popup */
+  position: relative;
+  padding-bottom: 20px;
+
+  h2 {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none !important;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px; /* Giới hạn chiều cao của nội dung popup */
+  overflow-y: auto; /* Hiển thị thanh cuộn khi nội dung vượt quá 600px */
+  padding: 0 10px; /* Tạo khoảng trống cho thanh cuộn */
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.radio-item input {
+  color: #007bff; /* Màu của nút radio */
+}
+
+.radio-item span {
+  font-size: 16px;
+  color: #333;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  max-height: 80%; /* Restrict the height to a percentage of the viewport */
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.popup-body {
+  display: flex;
+  flex-direction: column; /* Arrange the items vertically */
+  gap: 10px;
+  max-height: 600px; /* Set the maximum height */
+  overflow-y: auto; /* Enable vertical scrolling if the content exceeds the max height */
+  padding-right: 10px; /* Optional: Adds space for scrollbar */
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.radio-item input {
+  margin-right: 10px;
+}
+
+.option-button {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.option-button.selected {
+  background-color: #ff6b6b;
+  color: white;
+  border: 1px solid #ff6b6b;
+}
+
+.option-button:hover {
+  background-color: #ff6b6b;
+  color: white;
+}

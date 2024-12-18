@@ -1,0 +1,21 @@
+.location{
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    background-color: #fff;
+    border-radius: 10px;
+    img{
+        width: 220px;
+        height: 110px;
+        border-top-left-radius: 10px;  // Only top-left corner
+        border-top-right-radius: 10px; 
+    }
+    .text-location{
+        padding: 10px 5px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--background-color);
+        cursor: pointer;
+    }
+    .text-location:hover{
+        color: #ff6600;
+    }
+}

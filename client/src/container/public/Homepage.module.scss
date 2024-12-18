@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1px auto 0;
+    width: 1100px;
+}
+.title {
+    p {
+        color: #65676b;
+        font-size: 16px;
+    }
+}
+.location{
+    margin-top: 20px;
+    .btn-location{
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    h3{
+        font-size: 17px;
+    }
+}
+

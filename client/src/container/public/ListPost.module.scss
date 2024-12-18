@@ -1,0 +1,219 @@
+.list {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+.room {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.filter {
+  width: 29%;
+  margin-top: 30px;
+}
+.room-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 30px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  .title {
+    text-align: start;
+    padding: 10px;
+    h3 {
+      font-size: 20px;
+    }
+    .filter-btn {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    Button {
+      padding: 5px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #000;
+    }
+    Button:hover {
+      text-decoration: underline;
+    }
+  }
+  .room-item {
+    display: flex;
+    border-top: 1px solid red;
+    .room-images {
+      margin: 18px 0px;
+      position: relative;
+      display: grid;
+      cursor: pointer;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 2px; // Space between images
+      img {
+        width: 140px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+    .total-img {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      width: 50px;
+      padding: 3px 8px;
+      font-size: 10px;
+      border-radius: 5px;
+      position: absolute;
+      left: 2px;
+      bottom: 9px;
+    }
+
+    .room-details {
+      padding-left: 20px;
+      margin: 18px 0px;
+      width: 70%;
+      text-align: start;
+      .room-title {
+        display: flex;
+        align-items: start;
+        gap: 4px;
+      }
+      .icon-star {
+        margin-top: 5px;
+        color: rgb(212, 196, 17);
+      }
+      .post-title {
+        font-size: 1.4em;
+        color: #e13427;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+      .room-description {
+        display: flex;
+        gap: 15px;
+        align-items: end;
+      }
+      .room-price {
+        color: green;
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 17px;
+      }
+      .room-time {
+        display: flex;
+        justify-content: end;
+        font-size: 12px;
+        color: #a39e9e;
+        padding: 10px 0;
+      }
+      .room-size,
+      .room-location {
+        margin-bottom: 5px;
+        color: #666;
+        font-size: 14px;
+      }
+      .room-content {
+        font-size: 14px;
+        color: #666;
+      }
+
+      .room-contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 10px;
+        margin-top: 10px;
+
+        a {
+          background-color: var(--background-color);
+          color: white;
+          padding: 5px 10px;
+          border-radius: 4px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.container {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  h3 {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .list-category {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 30px;
+    .text-category {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      color: #000;
+      padding: 5px 0;
+      cursor: pointer;
+      &:hover {
+        color: rgb(236, 169, 10);
+      }
+    }
+  }
+  .icon {
+    font-size: 10px;
+    color: gray;
+  }
+}
+.container-price {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 10px;
+
+  h3 {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .list-price {
+    display: grid;
+    grid-template-columns: 1fr 1fr; // 2 cột
+    grid-template-rows: repeat(4, auto); // 4 hàng cho mỗi cột
+    row-gap: 5px;
+    column-gap: 20px;
+    padding: 10px 30px;
+
+    .text-price {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      padding: 5px 0;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(236, 169, 10);
+      }
+    }
+  }
+
+  .icon {
+    font-size: 10px;
+    color: rgb(236, 84, 26);
+  }
+}
